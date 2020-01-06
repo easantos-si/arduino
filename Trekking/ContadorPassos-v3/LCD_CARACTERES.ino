@@ -1,0 +1,27 @@
+byte vazio[] = {//0
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x00,
+  0x00
+};
+byte setaDireita[] = { //2
+  0x10,
+  0x18,
+  0x1C,
+  0x1E,
+  0x1E,
+  0x1C,
+  0x18,
+  0x10
+};
+void criarCaracteres()
+{
+  _lcd.createChar(0, vazio);
+  _lcd.createChar(2, setaDireita);
+
+  _lcd.home();
+}
